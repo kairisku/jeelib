@@ -60,6 +60,8 @@ extern volatile uint16_t rf12_crc;
 extern volatile uint8_t rf12_buf[];
 /// Seq number of encrypted packet (or -1).
 extern long rf12_seq;
+/// expose internal state
+extern volatile int8_t rxstate;     // current transceiver state
 
 /// Option to set RFM12 CS (or SS) pin for use on different hardware setups.
 /// Set to Dig10 by default for JeeNode. Can be Dig10, Dig9 or Dig8

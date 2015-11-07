@@ -126,7 +126,7 @@ static uint8_t cs_pin = SS_BIT;     // chip select pin
 static uint8_t nodeid;              // address of this node
 static uint8_t group;               // network group
 static volatile uint8_t rxfill;     // number of data bytes in rf12_buf
-static volatile int8_t rxstate;     // current transceiver state
+/*static*/ volatile int8_t rxstate;     // current transceiver state
 
 #define RETRIES     8               // stop retrying after 8 times
 #define RETRY_MS    1000            // resend packet every second until ack'ed
